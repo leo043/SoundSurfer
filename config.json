@@ -1,0 +1,11 @@
+{
+    "window_titles": [
+        "Edge"
+    ],
+    "screen_devices": {
+        "DISPLAY1": "Speaker",
+        "DISPLAY2": "Sculptor"
+    },
+    "not_found_threshold": 10,
+    "check_interval": 1
+}
