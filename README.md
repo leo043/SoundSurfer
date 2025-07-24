@@ -39,8 +39,8 @@ pip install screeninfo pygetwindow pywin32
     "check_interval": 1
 }
 ```
-**not_found_threshold** 表示连续检测不到目标窗口多少次后自动退出程序。
-**check_interval** 表示监控频率，数值越小检测越频繁。
+- **not_found_threshold** 表示连续检测不到目标窗口多少次后自动退出程序。
+- **check_interval** 表示监控频率，数值越小检测越频繁。
 ****
 
 ### 选择监控窗口
