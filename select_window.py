@@ -1,17 +1,23 @@
 import json
 import logging
+import os
 from tkinter import Tk, Frame, Label, messagebox, StringVar, Scrollbar, Canvas, VERTICAL, Button
 from tkinter.ttk import Radiobutton, Style
 import pygetwindow as gw
 import win32gui
 import re
 
+# 自动创建日志文件夹
+log_dir = "./log"
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+
 # 设置日志
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("select_window.log"),
+        logging.FileHandler(os.path.join(log_dir, "select_window.log")),
         logging.StreamHandler()
     ]
 )

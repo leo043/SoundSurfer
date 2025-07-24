@@ -7,12 +7,17 @@ from screeninfo import get_monitors
 import pygetwindow as gw
 import subprocess
 
+# 自动创建日志文件夹
+log_dir = "./log"
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+
 # 设置日志
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("./audio_switcher.log"),
+        logging.FileHandler(os.path.join(log_dir, "audio_switcher.log")),
         logging.StreamHandler()
     ]
 )
