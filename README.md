@@ -19,8 +19,11 @@ SoundSurfer 是一个自动音频设备切换工具。它可以根据指定窗�
 ```sh
 pip install screeninfo pygetwindow pywin32
 ```
-下载nircmd工具 "nircmd.exe"（项目文件中已提供）,管理员身份运行并点击Copy。如无法复制请手动将文件移动到 "C:\Windows"。
+下载nircmd工具 "nircmd.exe"（项目文件中已提供）,管理员身份运行并点击Copy。
+
 ![alt text](png/1.png)
+
+如无法复制请手动将文件移动到 "C:\Windows"。
 ****
 
 ### 配置文件
